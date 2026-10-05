@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Launch17th — ayuda real para arrancar tu tienda online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,900;1,900&display=swap" rel="stylesheet">
+<script>
+try{if(localStorage.getItem("motion")==="on")document.documentElement.setAttribute("data-motion","on")}catch(e){}
+window.__calm=function(){return matchMedia("(prefers-reduced-motion: reduce)").matches&&document.documentElement.getAttribute("data-motion")!=="on"};
+</script>
+<style>
+:root{color-scheme:dark;--bg:#0B0B0C;--panel:#151516;--ink:#F5F1E6;--muted:#A8A396;--gold:#E3B341;--gold-ink:#1A1405;--line:#2A2A2C;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B0B0C}}
+:root[data-theme="dark"]{--bg:#0B0B0C}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.6 Archivo,system-ui,sans-serif}
+h1,h2,h3{margin:0;font-weight:900;line-height:1.05;letter-spacing:-.02em}
+h1{font-size:clamp(2.2rem,6.4vw,4.4rem)}
+h2{font-size:clamp(1.8rem,4.5vw,3rem);text-align:center}
+h3{font-size:1.2rem;letter-spacing:-.01em}
+em{font-style:italic;color:var(--gold)}
+p{margin:0}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.top{background:var(--gold);color:var(--gold-ink);text-align:center;font-weight:600;font-size:.95rem;padding:9px 16px}
+.hero{text-align:center;padding:72px 0 80px}
+.hero h1{max-width:18ch;margin:0 auto}
+.hero p{color:var(--muted);margin:24px auto 36px;max-width:46ch;font-size:1.15rem}
+.btn{display:inline-block;background:var(--gold);color:var(--gold-ink);font:900 1.05rem Archivo,sans-serif;padding:16px 28px;border-radius:999px;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(227,179,65,.3)}
+.sub{display:block;margin-top:14px;color:var(--muted);font-size:.9rem}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.intro{text-align:center;color:var(--muted);max-width:50ch;margin:16px auto 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.card p{color:var(--muted);font-size:.97rem;flex:1}
+.card a{color:var(--gold);font-weight:600;text-decoration:none}
+.card a:hover{text-decoration:underline}
+.cta{text-align:center}
+.cta p{color:var(--muted);max-width:44ch;margin:16px auto 32px}
+footer{border-top:1px solid var(--line);padding:24px 0 36px;text-align:center;color:var(--muted);font-size:.85rem}
+/* animaciones */
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes shine{to{background-position:-200% 0}}
+@keyframes drift{0%,100%{transform:translate(-50%,0) scale(1)}50%{transform:translate(-45%,30px) scale(1.15)}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(227,179,65,.55)}100%{box-shadow:0 0 0 22px rgba(227,179,65,0)}}
+@keyframes tick{to{transform:translateX(-50%)}}
+@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.top{overflow:hidden;white-space:nowrap;padding:0}
+.top .track{display:inline-flex;animation:tick 28s linear infinite}
+.top span{padding:9px 40px}
+.hero{position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;left:50%;top:-80px;width:620px;height:620px;max-width:140%;border-radius:50%;background:radial-gradient(circle,rgba(227,179,65,.22),transparent 65%);transform:translate(-50%,0);animation:drift 9s ease-in-out infinite;pointer-events:none;z-index:0}
+.hero>*{position:relative;z-index:1;animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero>*:nth-child(2){animation-delay:.15s}
+.hero>*:nth-child(3){animation-delay:.3s}
+.hero>*:nth-child(4){animation-delay:.45s}
+em{background:linear-gradient(90deg,var(--gold) 0%,#FFF1BD 25%,var(--gold) 50%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3.5s linear infinite}
+.btn{position:relative;overflow:hidden}
+.hero .btn{animation:rise .9s .3s cubic-bezier(.2,.7,.2,1) backwards,ring 2.2s 1.4s infinite}
+.btn::after{content:"";position:absolute;top:0;left:-70%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .6s}
+.btn:hover::after{left:130%}
+.btn:active{transform:scale(.97)}
+section{position:relative}
+section::before{content:"";position:absolute;top:-1px;left:50%;width:120px;margin-left:-60px;height:2px;background:var(--gold);transform-origin:center;transform:scaleX(0);transition:transform .9s .1s}
+section.in::before{transform:scaleX(1)}
+.rv{opacity:0;transform:translateY(32px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.card{transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .35s,border-color .35s,box-shadow .35s}
+.card.in:hover{transform:translateY(-8px);border-color:var(--gold);box-shadow:0 14px 34px rgba(227,179,65,.16)}
+.card a{background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 2px no-repeat;transition:background-size .3s;text-decoration:none!important;align-self:flex-start}
+.card a:hover{background-size:100% 2px}
+/* cielo: avión y paquetes */
+@keyframes fly{from{transform:translate3d(-220px,0,0)}to{transform:translate3d(calc(100vw + 220px),0,0)}}
+@keyframes bob{from{transform:translateY(-6px) rotate(-1.5deg)}to{transform:translateY(6px) rotate(1.5deg)}}
+@keyframes fallY{from{transform:translate3d(0,0,0) rotate(0)}to{transform:translate3d(0,115vh,0) rotate(var(--r,40deg))}}
+@keyframes driftX{from{transform:translate3d(0,0,0)}to{transform:translate3d(var(--dx,120px),0,0)}}
+@keyframes drift2{from{transform:translateX(-14px)}to{transform:translateX(14px)}}
+@keyframes sway{from{transform:rotate(-8deg)}to{transform:rotate(8deg)}}
+#sky{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0;color:var(--gold);opacity:.6}
+#sky .plane{position:absolute;left:0;width:220px;will-change:transform;animation:fly 20s linear forwards}
+#sky .plane svg{width:100%;display:block;filter:drop-shadow(0 0 8px rgba(227,179,65,.45));animation:bob 2.4s ease-in-out infinite alternate}
+#sky .pk{position:absolute;will-change:transform;animation:driftX var(--ft,7s) cubic-bezier(.05,.6,.3,1) forwards}
+#sky .py{will-change:transform;animation:fallY var(--ft,7s) cubic-bezier(.35,0,.85,.7) forwards}
+#sky .pk.chute .py{animation-timing-function:linear}
+#sky .pk svg{display:block}
+#sky .pk.chute .sw{animation:drift2 2.6s ease-in-out infinite alternate}
+#sky .pk.chute svg{transform-origin:50% 0;animation:sway 2.6s ease-in-out infinite alternate}
+.top,main,footer{position:relative;z-index:1}
+.top{z-index:2}
+@media (max-width:600px){#sky .plane{width:160px}}
+.steps{list-style:none;counter-reset:s;margin:0 auto;padding:0;max-width:680px;display:grid;gap:14px}
+.steps li{counter-increment:s;position:relative;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px 20px 18px 74px;transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .35s,border-color .35s}
+.steps li::before{content:counter(s);position:absolute;left:20px;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;background:var(--gold);color:var(--gold-ink);font-weight:900;display:grid;place-items:center}
+.steps li:hover{border-color:var(--gold)}
+.steps b{display:block;font-size:1.1rem}
+.steps span{color:var(--muted);font-size:.97rem}
+.note{text-align:center;color:var(--muted);font-size:.9rem;margin-top:28px}
+.big{text-align:center;margin:0 0 40px}
+.big .num{display:block;font-weight:900;font-size:clamp(5rem,20vw,10rem);line-height:1;color:var(--gold);letter-spacing:-.04em;text-shadow:0 0 50px rgba(227,179,65,.35)}
+.big .num b{font-weight:900}
+.big .cap{display:block;color:var(--muted);margin-top:6px}
+#impulso .grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+/* más animaciones */
+@keyframes word{from{opacity:0;transform:translateY(.55em) rotate(4deg);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+@keyframes floatup{0%{transform:translateY(0) scale(.6);opacity:0}15%{opacity:.9}100%{transform:translateY(-420px) scale(1.2);opacity:0}}
+@keyframes pop{0%{transform:translateY(90px) scale(.8);opacity:0}60%{transform:translateY(-8px) scale(1.05);opacity:1}100%{transform:none;opacity:1}}
+@keyframes wiggle{0%,88%,100%{transform:rotate(0)}91%{transform:rotate(-5deg) scale(1.06)}94%{transform:rotate(5deg) scale(1.06)}97%{transform:rotate(-3deg)}}
+#prog{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:3px;background:var(--gold);transform-origin:left;transform:scaleX(0);z-index:60;pointer-events:none}
+.hero h1{animation:none;opacity:1}
+.w{display:inline-block;animation:word .8s var(--d,0s) cubic-bezier(.2,.7,.2,1) both}
+em.w{animation:word .8s var(--d,0s) cubic-bezier(.2,.7,.2,1) both,shine 3.5s linear infinite}
+.hero>.pts{position:absolute;inset:0;z-index:0;pointer-events:none;animation:none;overflow:hidden}
+.pts i{position:absolute;bottom:-10px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold);animation:floatup var(--t,9s) var(--dl,0s) linear infinite;opacity:0}
+.card{position:relative;overflow:hidden;will-change:transform}
+.card>*{position:relative}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(227,179,65,.2),transparent 62%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover::before{opacity:1}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:55;background:var(--gold);color:var(--gold-ink);font:900 1rem Archivo,sans-serif;padding:14px 22px;border-radius:999px;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.5);opacity:0;pointer-events:none;transform:translateY(90px)}
+.fab.on{pointer-events:auto;animation:pop .6s cubic-bezier(.2,.8,.2,1) both,wiggle 5s 1.5s infinite}
+@media (prefers-reduced-motion:reduce){
+html:not([data-motion="on"]) *,html:not([data-motion="on"]) *::before,html:not([data-motion="on"]) *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html:not([data-motion="on"]) .rv{opacity:1!important;transform:none!important}
+html:not([data-motion="on"]) section::before{transform:none}
+html:not([data-motion="on"]) .top{overflow:visible;white-space:normal;text-align:center}
+html:not([data-motion="on"]) .top .track{display:block}
+html:not([data-motion="on"]) .top span:not(:first-child){display:none}
+html:not([data-motion="on"]) .fab.on{opacity:1;transform:none}
+html:not([data-motion="on"]) .pts{display:none}
+html:not([data-motion="on"]) #sky .plane{left:55%}}
+</style>
+</head>
+<body>
+<div id="sky" aria-hidden="true"></div>
+<div id="prog" aria-hidden="true"></div>
+<a class="fab" id="fab" href="https://t.me/JoseXcrypto" target="_blank" rel="noopener">Hablemos</a>
+<div class="top"><div class="track"><span>Te ayudamos a elegir qué vender y te damos US$20 para arrancar tu tienda online</span><span aria-hidden="true">Te ayudamos a elegir qué vender y te damos US$20 para arrancar tu tienda online</span><span aria-hidden="true">Te ayudamos a elegir qué vender y te damos US$20 para arrancar tu tienda online</span><span aria-hidden="true">Te ayudamos a elegir qué vender y te damos US$20 para arrancar tu tienda online</span></div></div>
+
+<main>
+  <div class="wrap hero">
+    <h1>Armá tu primera tienda online <em>sin humo</em> y sin comprar un curso.</h1>
+    <p>Te ayudamos a elegir qué vender y te damos 20 dólares para que lo compres, lo vendas y arranques tu tienda.</p>
+    <a class="btn" href="https://t.me/JoseXcrypto" target="_blank" rel="noopener">Hablemos 30 minutos</a>
+    <span class="sub">Gratis y sin presión</span>
+    <div class="pts" aria-hidden="true"></div>
+  </div>
+
+  <section id="impulso"><div class="wrap">
+    <h2>Te damos <em>20 dólares</em> para arrancar</h2>
+    <p class="intro">Primero te ayudamos a elegir qué vender. Después ponemos US$20 para que lo compres y lo vendas.</p>
+    <div class="big"><span class="num">US$<b>20</b></span><span class="cap">para tu primera inversión</span></div>
+    <div class="grid">
+      <div class="card"><h3>Tu primer producto</h3><p>Para comprar el producto que elegimos juntos y tener algo real para vender.</p></div>
+      <div class="card"><h3>Shopify</h3><p>Para pagar tu plan y dejar la tienda funcionando.</p></div>
+      <div class="card"><h3>Tu primera campaña</h3><p>Para invertir en Meta Ads y probar si tu producto interesa.</p></div>
+      <div class="card"><h3>Otros gastos básicos</h3><p>Para lo que haga falta para arrancar, como el dominio u otras herramientas.</p></div>
+    </div>
+    <p class="note">Con un presupuesto chico, elegir bien el producto es lo más importante. Por eso empezamos por ahí.</p>
+    <div style="text-align:center;margin-top:28px"><a class="btn" href="https://t.me/JoseXcrypto" target="_blank" rel="noopener">Quiero mis 20 dólares</a></div>
+  </div></section>
+
+  <section id="inicio"><div class="wrap">
+    <h2>Cómo <em>iniciar</em></h2>
+    <p class="intro">Seis pasos, en este orden. No te saltees ninguno.</p>
+    <ol class="steps">
+      <li><b>Elegimos qué vender</b><span>Te ayudamos a elegir un producto con margen suficiente y que puedas conseguir de forma confiable.</span></li>
+      <li><b>Calculá tus números</b><span>Costo del producto, envío, comisiones y publicidad. Si no cierra, cambiá el producto o el precio.</span></li>
+      <li><b>Armá tu tienda</b><span>Con parte de los US$20 pagás Shopify. Después, productos, pagos, envíos y políticas.</span></li>
+      <li><b>Conectá la medición</b><span>Para que cada venta quede registrada y puedas aprender de ella.</span></li>
+      <li><b>Probá anuncios con poco presupuesto</b><span>Tu primera campaña en Meta Ads: pocos anuncios, tiempo para que aprendan y atención a los números.</span></li>
+      <li><b>Ajustá y repetí</b><span>Mejorá lo que funciona, cortá lo que no y escalá de a poco.</span></li>
+    </ol>
+  </div></section>
+
+  <section id="shopify"><div class="wrap">
+    <h2>Lo básico de <em>Shopify</em></h2>
+    <p class="intro">La plataforma donde vive tu tienda. Esto es lo que tenés que entender antes de abrir la cuenta.</p>
+    <div class="grid">
+      <div class="card"><h3>Qué es Shopify</h3><p>Una plataforma para crear y administrar tu tienda online: catálogo, carrito, pagos y pedidos en un solo lugar.</p></div>
+      <div class="card"><h3>Cuenta y plan</h3><p>Podés empezar con una prueba y elegir plan cuando sepas qué necesitás. Revisá siempre las condiciones vigentes en su sitio.</p></div>
+      <div class="card"><h3>Elegir un tema</h3><p>El tema define cómo se ve tu tienda. Elegí uno simple y rápido; el diseño se mejora después.</p></div>
+      <div class="card"><h3>Cargar productos</h3><p>Buenas fotos, un título claro, una descripción útil y variantes (talle, color) bien armadas.</p></div>
+      <div class="card"><h3>Colecciones</h3><p>Agrupá tus productos por categoría para que el cliente encuentre lo que busca sin dar vueltas.</p></div>
+      <div class="card"><h3>Pagos</h3><p>Activás los medios de pago disponibles en tu país y probás que el cobro funcione de punta a punta.</p></div>
+      <div class="card"><h3>Envíos</h3><p>Definís zonas, tarifas y tiempos. Tenés que saber cuánto te cuesta enviar antes de ponerle precio al producto.</p></div>
+      <div class="card"><h3>Dominio y políticas</h3><p>Un dominio propio da confianza. Sumá políticas de envío, cambios y privacidad claras.</p></div>
+      <div class="card"><h3>Aplicaciones</h3><p>Hay apps para casi todo, pero cada una suma costo y peso. Empezá con las mínimas.</p></div>
+      <div class="card"><h3>Probar la compra</h3><p>Hacé un pedido de prueba como si fueras cliente, desde el celular, antes de lanzar.</p></div>
+    </div>
+  </div></section>
+
+  <section id="meta"><div class="wrap">
+    <h2>Lo básico de <em>Meta Ads</em></h2>
+    <p class="intro">Así se anuncia en Facebook e Instagram. Lo justo para entender qué hacés con tu plata.</p>
+    <div class="grid">
+      <div class="card"><h3>Qué son</h3><p>Anuncios pagos que se muestran en Facebook e Instagram a personas que podrían estar interesadas en lo que vendés.</p></div>
+      <div class="card"><h3>Cuentas necesarias</h3><p>Una cuenta publicitaria, una página de Facebook y, idealmente, un perfil de Instagram del negocio, todo ordenado en tu portfolio comercial de Meta.</p></div>
+      <div class="card"><h3>Medir las ventas</h3><p>Conectás tu tienda con Meta (píxel y API de conversiones) para que Meta sepa qué anuncios generan compras.</p></div>
+      <div class="card"><h3>Cómo se estructura</h3><p>Campaña (el objetivo), conjunto de anuncios (público y presupuesto) y anuncio (lo que ve la gente).</p></div>
+      <div class="card"><h3>Elegir el objetivo</h3><p>Para vender, se elige un objetivo orientado a ventas. El objetivo le dice a Meta qué acción querés lograr.</p></div>
+      <div class="card"><h3>Público</h3><p>Podés acotar por país, edad e intereses, o dejar que Meta encuentre al público. Probá y compará.</p></div>
+      <div class="card"><h3>Creativos</h3><p>Lo que más pesa en un anuncio es lo que se ve: mostrá el producto en uso y probá varias versiones.</p></div>
+      <div class="card"><h3>Presupuesto</h3><p>Empezá con un monto que puedas perder sin problema y no lo toques a cada rato: Meta necesita tiempo para aprender.</p></div>
+      <div class="card"><h3>Métricas básicas</h3><p>Costo por compra, ROAS (cuánto facturás por cada peso invertido) y tasa de conversión de tu tienda.</p></div>
+      <div class="card"><h3>Errores comunes</h3><p>Anunciar sin saber tus márgenes, cambiar todo cada día o apagar un anuncio con muy pocos datos.</p></div>
+    </div>
+    <p class="note">Las pantallas y nombres de estas plataformas cambian seguido. Si algo no coincide, escribinos.</p>
+  </div></section>
+
+  <section id="ayuda"><div class="wrap">
+    <h2>Cómo te <em>ayudamos</em></h2>
+    <p class="intro">Te acompañamos con información real. No prometemos ventas ni resultados: nadie puede garantizarlos.</p>
+    <div class="grid">
+      <div class="card"><h3>Elegimos qué vender</h3><p>Analizamos juntos opciones de producto, margen y proveedor para que tu primera elección tenga sentido.</p></div>
+      <div class="card"><h3>US$20 para arrancar</h3><p>Te damos 20 dólares para tu producto, Shopify y tu primera campaña.</p></div>
+      <div class="card"><h3>Armamos tu tienda</h3><p>Te guiamos para configurar Shopify sin perderte en las opciones.</p></div>
+      <div class="card"><h3>Pagos y envíos</h3><p>Dejamos funcionando cobros y logística antes de lanzar.</p></div>
+      <div class="card"><h3>Tu primera campaña</h3><p>Te explicamos cada paso de Meta Ads y la dejamos lista.</p></div>
+      <div class="card"><h3>Leemos los números</h3><p>Interpretamos los resultados y decidimos qué ajustar.</p></div>
+      <div class="card"><h3>Respuestas directas</h3><p>Escribinos tus dudas por Telegram y te respondemos.</p></div>
+    </div>
+  </div></section>
+
+  <section id="guias"><div class="wrap">
+    <h2>Guías <em>gratis</em></h2>
+    <p class="intro">Todo lo que sabemos, lo compartimos abierto. Vamos a sumar más seguido.</p>
+    <div class="grid">
+      <div class="card"><h3>Cómo calcular tu precio de venta</h3><p>Un ejemplo real, paso a paso.</p><a href="#">Leer guía</a></div>
+      <div class="card"><h3>Errores del primer mes</h3><p>Los que más se repiten y cómo evitarlos.</p><a href="#">Leer guía</a></div>
+      <div class="card"><h3>Cómo elegir el envío</h3><p>Correo, courier o retiro según tu volumen.</p><a href="#">Leer guía</a></div>
+    </div>
+  </div></section>
+
+  <section id="contacto"><div class="wrap cta">
+    <h2>¿Querés <em>arrancar</em>?</h2>
+    <p>Escribinos y charlamos 30 minutos. Te contamos qué haríamos en tu lugar, aunque eso no incluya comprarnos nada.</p>
+    <a class="btn" href="https://t.me/JoseXcrypto" target="_blank" rel="noopener">Escribir por Telegram</a>
+  </div></section>
+</main>
+<script>
+(function(){
+ var secs=document.querySelectorAll("section");
+ var els=document.querySelectorAll("section h2,.intro,.big,.card,.steps li,.note,.cta p,.cta .btn");
+ if(!("IntersectionObserver" in window)){secs.forEach(function(s){s.classList.add("in")});return}
+ els.forEach(function(e){e.classList.add("rv");
+  var g=e.parentElement,i=Array.prototype.indexOf.call(g.children,e);
+  e.style.transitionDelay=(e.classList.contains("card")||e.tagName==="LI"?(i%4)*110:0)+"ms"});
+ var io=new IntersectionObserver(function(list){list.forEach(function(x){
+  if(x.isIntersecting){var t=x.target;t.classList.add("in");io.unobserve(t);setTimeout(function(){t.style.transitionDelay=""},1200)}})},{threshold:.15,rootMargin:"0px 0px -40px 0px"});
+ els.forEach(function(e){io.observe(e)});
+ secs.forEach(function(s){io.observe(s)});
+})();
+</script>
+<script>
+(function(){
+ var calm=window.__calm();
+ var fine=window.matchMedia("(hover:hover) and (pointer:fine)").matches;
+ /* progreso + botón flotante */
+ var prog=document.getElementById("prog"),fab=document.getElementById("fab"),cta=document.getElementById("contacto");
+ function onScroll(){
+  var h=document.documentElement.scrollHeight-window.innerHeight;
+  prog.style.transform="scaleX("+(h>0?Math.min(1,window.scrollY/h):0)+")";
+  var show=window.scrollY>500&&cta.getBoundingClientRect().top>window.innerHeight*.7;
+  fab.classList.toggle("on",show)}
+ window.addEventListener("scroll",onScroll,{passive:true});onScroll();
+ if(calm)return;
+ /* titular palabra por palabra */
+ var h=document.querySelector(".hero h1"),k=0;
+ Array.prototype.slice.call(h.childNodes).forEach(function(n){
+  if(n.nodeType===3){var f=document.createDocumentFragment();
+   n.textContent.split(/(\s+)/).forEach(function(w){
+    if(!w.trim()){f.appendChild(document.createTextNode(w));return}
+    var s=document.createElement("span");s.className="w";s.style.setProperty("--d",(.1+k++*.1)+"s");s.textContent=w;f.appendChild(s)});
+   n.replaceWith(f)}
+  else if(n.nodeType===1){n.classList.add("w");n.style.setProperty("--d",(.1+k++*.1)+"s")}});
+ /* partículas doradas */
+ var pts=document.querySelector(".pts");
+ for(var i=0;i<18;i++){var p=document.createElement("i"),z=2+Math.random()*3;
+  p.style.cssText="left:"+Math.random()*100+"%;width:"+z+"px;height:"+z+"px;--t:"+(7+Math.random()*7)+"s;--dl:"+(Math.random()*8)+"s";pts.appendChild(p)}
+ if(!fine)return;
+ /* spotlight + inclinación en tarjetas */
+ document.querySelectorAll(".card").forEach(function(c){
+  c.addEventListener("mousemove",function(e){
+   var r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+   c.style.setProperty("--mx",x+"px");c.style.setProperty("--my",y+"px");
+   if(c.classList.contains("in"))c.style.transform="perspective(700px) rotateX("+((.5-y/r.height)*8)+"deg) rotateY("+((x/r.width-.5)*8)+"deg) translateY(-8px)"});
+  c.addEventListener("mouseleave",function(){c.style.transform=""})});
+ /* botones magnéticos */
+ document.querySelectorAll(".btn").forEach(function(b){
+  b.addEventListener("mousemove",function(e){
+   var r=b.getBoundingClientRect();
+   b.style.transform="translate("+((e.clientX-r.left-r.width/2)*.2)+"px,"+((e.clientY-r.top-r.height/2)*.3)+"px)"});
+  b.addEventListener("mouseleave",function(){b.style.transform=""})});
+})();
+</script>
+
+<script>
+(function(){
+ var sky=document.getElementById("sky"),calm=window.__calm();
+ var PLANE='<svg viewBox="0 0 150 60" fill="rgba(227,179,65,.3)" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M10 32c0-7 9-11 22-11h78c16 0 34 5 38 11-4 6-22 10-38 10H32C19 42 10 39 10 32z"/><path d="M18 27 6 8h20l16 14"/><path d="M68 34 52 56h26l20-22"/><circle cx="96" cy="31" r="2.2"/><circle cx="108" cy="31" r="2.2"/><circle cx="120" cy="31" r="2.2"/></svg>';
+ var BOX='<svg viewBox="0 0 30 30" width="46" height="46" fill="rgba(227,179,65,.3)" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><rect x="3" y="6" width="24" height="21" rx="2"/><path d="M15 6v21M3 15h24"/></svg>';
+ var CHUTE='<svg viewBox="0 0 64 84" width="68" height="89" fill="rgba(227,179,65,.3)" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M4 30a28 24 0 0 1 56 0z"/><path d="M4 30 24 58M60 30 40 58M32 30v28" fill="none"/><rect x="22" y="58" width="20" height="18" rx="2"/><path d="M32 58v18M22 67h20" fill="none"/></svg>';
+ function drop(x,y){
+  if(sky.querySelectorAll(".pk").length>30)return;
+  var d=document.createElement("div"),c=Math.random()<.45;
+  d.className="pk"+(c?" chute":"");
+  d.style.left=x+"px";d.style.top=y+"px";
+  var t=(c?11+Math.random()*3:5.5+Math.random()*2)+"s";
+  d.style.setProperty("--ft",t);
+  d.style.setProperty("--dx",(c?30+Math.random()*40:90+Math.random()*80)+"px");
+  d.style.setProperty("--r",(Math.random()<.5?-1:1)*(c?0:30+Math.random()*60)+"deg");
+  d.innerHTML='<div class="py">'+(c?'<div class="sw">'+CHUTE+'</div>':BOX)+'</div>';
+  d.querySelector(".py").addEventListener("animationend",function(e){if(e.target===this)d.remove()});
+  sky.appendChild(d)}
+ if(calm){
+  var p=document.createElement("div");p.className="plane";p.style.top="14vh";p.innerHTML=PLANE;sky.appendChild(p);
+  [[62,24],[66,38],[60,52]].forEach(function(a,i){var q=document.createElement("div");q.className="pk";q.style.left=a[0]+"%";q.style.top=a[1]+"vh";q.style.animation="none";q.innerHTML=i==1?'<div class="sw">'+CHUTE+'</div>':BOX;sky.appendChild(q)});
+  return}
+ function flight(skip){
+  var p=document.createElement("div");p.className="plane";
+  p.style.top=(6+Math.random()*18)+"vh";p.innerHTML=PLANE;
+  if(skip)p.style.animationDelay="-"+skip+"s";
+  sky.appendChild(p);
+  var iv=setInterval(function(){
+   var r=p.getBoundingClientRect();
+   if(r.left>0&&r.left<window.innerWidth-60)drop(r.left+r.width*.45,r.bottom-8)},950);
+  p.addEventListener("animationend",function(e){
+   if(e.target!==p)return;
+   clearInterval(iv);p.remove()})}
+ flight(11);flight(3);
+ setInterval(function(){if(!document.hidden&&sky.querySelectorAll(".plane").length<4)flight()},8000);
+})();
+</script>
+
+<script>
+(function(){
+ var b=document.querySelector(".big b");if(!b||window.__calm())return;
+ var done=false,io=new IntersectionObserver(function(l){
+  if(l[0].isIntersecting&&!done){done=true;var t0=performance.now();
+   (function f(t){var k=Math.min(1,(t-t0)/1400);b.textContent=Math.round(20*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)})(t0)}},{threshold:.6});
+ io.observe(b)
+})();
+</script>
+
+
+<footer><div class="wrap">© 2026 Launch17th · Textos provisorios · <a href="#" style="color:inherit">Términos y condiciones</a></div></footer>
+</body>
+</html>
